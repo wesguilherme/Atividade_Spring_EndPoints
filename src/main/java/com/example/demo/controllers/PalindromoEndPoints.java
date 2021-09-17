@@ -9,7 +9,7 @@ public class PalindromoEndPoints {
 
     @GetMapping("/palindromo")
 
-    public String palíndromo(String nome) {
+    public String palindromo(String nome) {
         String nomet = nome.replaceAll("\\s+", "");
         String t = new StringBuilder(nomet).reverse().toString();
         if (nomet.equalsIgnoreCase(t)) {
