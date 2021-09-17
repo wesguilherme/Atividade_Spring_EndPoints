@@ -6,9 +6,8 @@ public class InverterStringEndPoints {
 
     @GetMapping("/inverte")
 
-    public static void inverteString(String nome) {
+    public String inverteString(String nome) {
         String t = new StringBuilder(nome).reverse().toString();
-        System.out.println(t);
-        ;
+        return t;
     }
 }
